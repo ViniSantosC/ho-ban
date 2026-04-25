@@ -56,6 +56,19 @@ const acoes = {
     ),
   pessoa7: () => mostarInfos("img/alunos.jpg", "Vinciussss", "asfas"),
   pessoa8: () => mostarInfos("img/alunos.jpg", "nbjsdngfs", "sdjndçj"),
+  pessoa9: () => mostarInfos("img/alunos.jpg", "nbjsdngfs", "sdjndçj"),
+  pessoa10: () => mostarInfos("img/alunos.jpg", "nbjsdngfs", "sdjndçj"),
+  pessoa11: () => mostarInfos("img/alunos.jpg", "nbjsdngfs", "sdjndçj"),
+  pessoa12: () => mostarInfos("img/alunos.jpg", "nbjsdngfs", "sdjndçj"),
+  pessoa13: () => mostarInfos("img/alunos.jpg", "nbjsdngfs", "sdjndçj"),
+  pessoa14: () => mostarInfos("img/alunos.jpg", "nbjsdngfs", "sdjndçj"),
+  pessoa15: () => mostarInfos("img/alunos.jpg", "nbjsdngfs", "sdjndçj"),
+  pessoa16: () => mostarInfos("img/alunos.jpg", "nbjsdngfs", "sdjndçj"),
+  pessoa17: () => mostarInfos("img/alunos.jpg", "nbjsdngfs", "sdjndçj"),
+  pessoa18: () => mostarInfos("img/alunos.jpg", "nbjsdngfs", "sdjndçj"),
+  pessoa19: () => mostarInfos("img/alunos.jpg", "nbjsdngfs", "sdjndçj"),
+  pessoa20: () => mostarInfos("img/alunos.jpg", "nbjsdngfs", "sdjndçj"),
+  
 };
 
 pessoas.addEventListener('click', (e) => {
@@ -99,7 +112,7 @@ mysql> SELECT mensagem FROM turma WHERE professor = 'João Gabriel de Lucca';
 `
 
     let i = 0;
-    let velocidade = 50
+    let velocidade = 30
     let terminal = document.getElementById("textoTerminal")
     terminal.innerHTML = ""
     

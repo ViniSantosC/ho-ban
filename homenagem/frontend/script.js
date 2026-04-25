@@ -1,23 +1,21 @@
 const pessoas = document.getElementById("pessoas");
 
-const InfConteiner = document.getElementById("modal")
-const nomeTxt = document.getElementById("nome-aluno")
-const detalheTxt = document.getElementById("detalhe-aluno")
-const imgAluno = document.getElementById("aluno-img")
+const overlay = document.getElementById('modal-overlay');
+const modalNome = document.getElementById('modal-nome');
+const modalDesc = document.getElementById('modal-desc');
+const btnFechar = document.getElementById('btn-fechar');
+const imgAlunos = document.getElementById("imgAluno")
 
 const mostarInfos = (caminhoImg, nome , detalhes) => {
-    imgAluno.src = caminhoImg
-    nomeTxt.textContent = nome
-    detalheTxt.textContent = detalhes
-    InfConteiner.classList.remove('hidden');
-    InfConteiner.classList.add('modal')
+    imgAlunos.src = caminhoImg
+    modalNome.textContent = nome;
+    modalDesc.textContent = detalhes;
+    overlay.classList.remove('modal-hidden');
 }
-const fechar = document.getElementById("fechar");
+btnFechar.addEventListener('click', () => {
+    overlay.classList.add('modal-hidden');
+});
 
-fechar.addEventListener('click', () => {
-    InfConteiner.classList.add('hidden')
-    InfConteiner.classList.remove('modal')
-})
 
 const acoes = {
     pessoa1: () => mostarInfos("img/alunos.jpg","Vinicius Santos", "Um aluno"),

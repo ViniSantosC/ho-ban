@@ -21,8 +21,8 @@
       <div class="flex">
         <div><h1>Homenagem ao Prof. João Gabriel</h1></div>
         <div class="as">
-          <a class="a1" href="">Mensagens </a><a class="a2" href="">Memórias</a
-          ><a class="a3" href="">Despedida</a>
+          <a id="btnMensagem" class="a1" href="#mensagem">Mensagens </a><a class="a2" href="#memorias">Memórias</a
+          ><a class="a3" href="#despedida">Despedida</a>
         </div>
       </div>
     </header>
@@ -44,62 +44,64 @@
           visão e fez uma falta imensa. Esta é a nossa forma de dizer <br />
           muito obrigado.
         </h2>
-        <button class="btnparte1">Ver Homenagem <span>➜</span></button>
-      </section>
-      <section class="parte2">
-        <h1 class="titulo2">Vozes da Turma</h1>
+        <button  class="btnparte1">Ver Homenagem <span>➜</span></button>
+      </section >
+      <section id="mensagem" class="parte2">
+        <h1  class="titulo2">Vozes da Turma</h1>
         <p class="subtitulo2">
           Cada aluno carrega um pedaço do seu ensinamento. Clique nas fotos para
           ler as <br />
           mensagens que preparamos com carinho.
         </p>
-        <div class="alunos">
-          <div class="aluno">
-            <button class="btn1"><img src="img/alunos.jpg" alt="" /></button>
-            <h1>Vinicius Santos</h1>
-            <p>3DM</p>
+        <div id="pessoas">
+          <div  class="alunos">
+            <div class="aluno">
+              <button data-action="pessoa1" id="btn1" class="btn1"><img src="img/alunos.jpg" alt="" /></button>
+              <h1>Vinicius Santos</h1>
+              <p>3DM</p>
+            </div>
+            <div class="aluno">
+              <button data-action="pessoa2" class="btn2"><img src="img/alunos.jpg" alt="" /></button>
+              <h1>Vinicius Santos</h1>
+              <p>3DM</p>
+            </div>
+            <div class="aluno">
+              <button data-action="pessoa3" class="btn3"><img src="img/alunos.jpg" alt="" /></button>
+              <h1>Vinicius Santos</h1>
+              <p>3DM</p>
+            </div>
+            <div class="aluno">
+              <button data-action="pessoa4" class="btn4"><img src="img/alunos.jpg" alt="" /></button>
+              <h1>Vinicius Santos</h1>
+              <p>3DM</p>
+            </div>
           </div>
-          <div class="aluno">
-            <button class="btn2"><img src="img/alunos.jpg" alt="" /></button>
-            <h1>Vinicius Santos</h1>
-            <p>3DM</p>
-          </div>
-          <div class="aluno">
-            <button class="btn3"><img src="img/alunos.jpg" alt="" /></button>
-            <h1>Vinicius Santos</h1>
-            <p>3DM</p>
-          </div>
-          <div class="aluno">
-            <button class="btn4"><img src="img/alunos.jpg" alt="" /></button>
-            <h1>Vinicius Santos</h1>
-            <p>3DM</p>
-          </div>
-        </div>
-        <div class="alunos">
-          <div class="aluno">
-            <button class="btn1"><img src="img/alunos.jpg" alt="" /></button>
-            <h1>Vinicius Santos</h1>
-            <p>3DM</p>
-          </div>
-          <div class="aluno">
-            <button class="btn2"><img src="img/alunos.jpg" alt="" /></button>
-            <h1>Vinicius Santos</h1>
-            <p>3DM</p>
-          </div>
-          <div class="aluno">
-            <button class="btn3"><img src="img/alunos.jpg" alt="" /></button>
-            <h1>Vinicius Santos</h1>
-            <p>3DM</p>
-          </div>
-          <div class="aluno">
-            <button class="btn4"><img src="img/alunos.jpg" alt="" /></button>
-            <h1>Vinicius Santos</h1>
-            <p>3DM</p>
+          <div class="alunos">
+            <div class="aluno">
+              <button data-action="pessoa5" class="btn1"><img src="img/alunos.jpg" alt="" /></button>
+              <h1>Vinicius Santos</h1>
+              <p>3DM</p>
+            </div>
+            <div class="aluno">
+              <button data-action="pessoa6" class="btn2"><img src="img/alunos.jpg" alt="" /></button>
+              <h1>Vinicius Santos</h1>
+              <p>3DM</p>
+            </div>
+            <div class="aluno">
+              <button data-action="pessoa7" class="btn3"><img src="img/alunos.jpg" alt="" /></button>
+              <h1>Vinicius Santos</h1>
+              <p>3DM</p>
+            </div>
+            <div class="aluno">
+              <button data-action="pessoa8" class="btn4"><img src="img/alunos.jpg" alt="" /></button>
+              <h1>Vinicius Santos</h1>
+              <p>3DM</p>
+            </div>
           </div>
         </div>
       </section>
       <section class="parte3">
-        <h1 class="titulo3">Além da Sala de Aula</h1>
+        <h1 id="memorias" class="titulo3">Além da Sala de Aula</h1>
         <h2 class="subtitulo3">
           Por trás de cada aula, existe uma pessoa que inspira dentro e fora da
           escola.
@@ -144,7 +146,7 @@
           </div>
         </div>
       </section>
-      <section class="parte4">
+      <section id="despedida" class="parte4">
         <svg xmlns="http://www.w3.org/2000/svg" width="90px" height="90px" viewBox="0 0 24 24" fill="none" stroke="#b58a00" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" class="coração"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
         <h1 class="titulo4">
           Mais que ensinando Banco de <br> Dados, o senhor deixou <br>
@@ -161,5 +163,14 @@
 
       </section>
     </main>
+    <div id="modal" class="hidden modal">
+      <div id="info-aluno" class="conteiner">
+        <button class="fechar" id="fechar">X</button>
+        <img class="imgAluno" id="aluno-img" src="" alt="imagem aluno">
+        <h2 id="nome-aluno"></h2>
+        <p id="detalhe-aluno"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -351,7 +351,7 @@ main {
   font-family: "Poppins", sans-serif;
   text-align: center;
   font-weight: 400;
-  color: #777;
+  color:#FFD700;
 }
 #modal-overlay {
   position: fixed;
@@ -406,12 +406,12 @@ main {
 }
 .descriçãoal {
   line-height: 1.7;
-letter-spacing: .2px;
+  letter-spacing: 0.2px;
   font-family: "Poppins", sans-serif;
   text-align: center;
   margin: 0 1rem;
   font-size: 1rem;
-  color:#1f1f1f;
+  color: #1f1f1f;
 }
 #btn-fechar {
   background: transparent;
@@ -423,52 +423,69 @@ letter-spacing: .2px;
   top: 10px;
   right: 15px;
   cursor: pointer;
-  
+}
+
+.conteinerMensagem {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  z-index: 10001;
+  padding: 40px;
+}
+
+.mensagemImg {
+  width: 28%;
+  max-width: 380px;
+  height: 75vh;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
 }
 
 .professoresT {
-  margin: 60px 0 25px 23.9px;
-  height: 80%;
-
-}
-#btnFecharT {
-  position: absolute;
-  color: white;
-  top: 50px;
-  font-size: 30px;
-  right: 55px;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-
-}
-.conteinerMensagem {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  background:  rgba(0, 0, 0, 0.7);
-  display: flex;
-
-  z-index: 10001;
+  object-fit: cover;
 }
 
 .terminal {
-    background: #111;
-    color: #00ff88;
-    padding: 24px;
-    width: 70%;
-    margin: 25px;
-    border-radius: 14px;
-    font-family: "Courier New", monospace;
-    text-align: left;
-    min-height: 260px;
-    white-space: pre-wrap;
-    line-height: 1.5;
-    font-size: 18px;
-}
+  background: #111;
+  color: #00ff88;
+  padding: 24px;
+  width: 72%;
+  margin: 25px;
+  border-radius: 14px;
+  font-family: "Courier New", monospace;
+  text-align: left;
 
+  min-height: 260px;
+  max-height: 85vh;
+
+  white-space: pre-wrap;
+  line-height: 1.5;
+  font-size: 16px;
+  box-shadow: 0 0 25px rgba(0, 255, 136, 0.15);
+  border: 1px solid rgba(0, 255, 136, 0.2);
+  overflow: hidden;
+}
+#textoTerminal {
+  white-space: pre;
+  display: block;
+}
+#btnFecharT {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 26px;
+  cursor: pointer;
+}
 .parte4 {
   background-color: #0b1f5a;
   background-image: radial-gradient(
@@ -506,5 +523,179 @@ letter-spacing: .2px;
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
   text-align: center;
-  color: #5f6368;
+  color: #6b6b6b;
+}
+/* Media Queries para Responsividade */
+
+@media (max-width: 1200px) {
+  .titulo {
+    font-size: 7rem;
+  }
+  .btnparte1, .btnfim {
+    width: 25%;
+  }
+  .comeco {
+    width: 40%;
+  }
+}
+
+@media (max-width: 992px) {
+  .flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .flex h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  main {
+    padding-top: 8rem;
+  }
+  .titulo {
+    font-size: 5rem;
+  }
+  .subtitulo {
+    font-size: 1.3rem;
+    padding: 0 1rem;
+  }
+  .subtitulo br {
+    display: none;
+  }
+  .btnparte1, .btnfim {
+    width: 40%;
+  }
+  .alunos {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+  }
+  .aluno {
+    width: 45%;
+  }
+  .tempo {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+  .tempo:nth-child(even) {
+    direction: ltr;
+  }
+  .parte3::before, .tempo::before {
+    display: none;
+  }
+  .titulo4 {
+    font-size: 3.5rem;
+  }
+  .titulo4 br, .subtitulo4 br {
+    display: none;
+  }
+  #modal-content {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+  #imgAluno {
+    width: 100%;
+    height: 250px;
+    border-radius: 1rem 1rem 0 0;
+  }
+  .conteinerMensagem {
+    flex-direction: column;
+    padding: 10px;
+    overflow-y: auto;
+  }
+  .mensagemImg {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    flex-shrink: 0;
+  }
+  .professoresT {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: #000;
+  }
+  .terminal {
+    width: 100%;
+    margin: 10px 0;
+    min-height: auto;
+    height: auto;
+    font-size: 13px;
+    padding: 15px;
+    flex-grow: 0;
+    white-space: pre-wrap;
+    word-break: break-word;
+    overflow: visible;
+  }
+  #textoTerminal {
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+}
+
+@media (max-width: 600px) {
+ .btnfim{
+      display: none;
+   }
+   
+  .titulo {
+    font-size: 3.5rem;
+  }
+  .comeco {
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+  .comeco h1 {
+    font-size: 1.1rem;
+  }
+  .titulo2, .titulo3 {
+    font-size: 3rem;
+  }
+  .aluno {
+    width: 100%;
+  }
+  .btnparte1, .btnfim {
+    width: 70%;
+  }
+  .subtitulo4 {
+    font-size: 1.2rem;
+   
+  }
+  #modal-content{
+    display: flex !important;
+    flex-direction: column !important;
+    width: 90vw !important;
+    max-width: 330px !important;
+    height: auto !important;
+    max-height: 85vh !important;
+    overflow-y: auto !important;
+    border-radius: 18px !important;
+  }
+
+  #imgAluno{
+    width: 100% !important;
+    height: 220px !important;
+    object-fit: cover !important;
+    object-position: center top !important;
+    border-radius: 18px 18px 0 0 !important;
+    display: block !important;
+  }
+
+  #modal-nome,
+  #modal-desc{
+    text-align: center !important;
+  }
+  .titulo4 {
+    font-size: 2.5rem;
+  }
+  .as a {
+    font-size: 1rem;
+    margin: 0 0.5rem;
+  }
 }

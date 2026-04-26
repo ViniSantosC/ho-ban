@@ -20,7 +20,7 @@ btnFechar.addEventListener('click', () => {
 const acoes = {
   pessoa1: () =>
     mostarInfos(
-      "img/pedro viana.jpg",
+      "img/pedro viana (2).jpg",
       "Pedro Viana",
       "''Por mais que a tristeza de te ver indo embora seja grande, eu ainda me sinto feliz por ter tido a oportunidade de ser seu aluno e também seu amigo, ao longo desse tempo, você não foi apenas um professor, mas alguém que realmente marcou a minha vida, você se tornou uma inspiração pra mim, alguém que me fez acreditar no meu potencial mesmo quando eu duvidava de mim mesmo. Suas palavras, sua paciência (q não é muita kkkkk)e sua forma de ensinar fizeram toda a diferença, não só nos estudos, mas também na forma como eu passei a enxergar minhas próprias capacidades, vou sentir muita saudade das aulas, das conversas e de tudo que aprendi com você Mas tenho certeza de que tudo isso vai continuar comigo, me guiando nos próximos passos''",
     ),
@@ -32,7 +32,7 @@ const acoes = {
     ),
   pessoa3: () =>
     mostarInfos(
-      "img/lucas.jpg",
+      "img/lucas (1).jpg",
       "Lucas",
       "''João vc foi um professor incrível, se não fosse por vc eu não saberia muito do que sei sobre programação, mesmo sendo meio preguiçoso (de acordo com vc mesmo) vc ainda estava disposto a tirar nossas dúvidas e a nos ensinar''",
     ),
@@ -88,7 +88,7 @@ const acoes = {
     mostarInfos("img/kecio.jpg", "Kecio", "''🍎Maracujá Maracujá 🍎''"),
   pessoa13: () =>
     mostarInfos(
-      "img/larisão.jpg",
+      "img/larisão .jpg",
       "Larisão",
       "''João, quando você me falou que iria sair, fiquei muito feliz e muito triste ao mesmo tempo. Feliz por você estar alcançando lugares mágicos na sua carreira, mas triste por perder um amigo que sempre estava aqui para conversar com a gente e deixar um clima de paz.Às vezes a gente dá umas mancadas, mas saiba que te amamos muito! Te desejo tudo de bom nessa sua nova caminhada e muita sabedoria. Você é foda! Vamos sentir muita saudade, então vê se não esquece da gente, hein? Queremos você na nossa formatura e no interclasse!Te amamos. Com carinho, Larissão.''",
     ),
@@ -128,44 +128,75 @@ pessoas.addEventListener('click', (e) => {
         const conteinerMensagem = document.getElementById("conteinerMensagem");
         conteinerMensagem.classList.remove('modal-hidden')
 
-        let texto = `
-mysql> INSERT INTO professores_que_nos_marcaram 
+       let texto = `
+> Conectando ao sistema...
+> Banco de dados carregado com sucesso.
+
+mysql> SELECT nome, materia, impacto
+FROM professores
+WHERE marcaram = true;
+
++--------------------------+----------------+-------------------------------------------------+
+| nome                     | materia        | impacto                                         |
++--------------------------+----------------+-------------------------------------------------+
+| João Gabriel de Lucca    | Banco de Dados | Ensinou com leveza, virou amigo da turma.       |
+| Luan                     | Front-End      | Acreditou em nós, incentivou nosso crescimento. |
++--------------------------+----------------+-------------------------------------------------+
+
+2 rows in set.
+
+mysql> INSERT INTO professores_que_nos_marcaram
 (nome, materia, motivo)
-VALUES 
-('João Gabriel de Lucca', 'Banco de Dados', 
-'Porque ensinou com paciência, entendeu nossas dificuldades e marcou nossa turma.');
+VALUES
+('Chegou e marcou nossa turma, ensinando com leveza,
+ mostrando que código não é um bicho de sete cabeças e nos fazendo pensar por nós mesmos.');
 
-mysql> SELECT * FROM professores_que_nos_marcaram;
+Query OK, 1 row affected.
 
-+--------------------------+----------------+--------------------------------------------------------------+
-| nome                     | materia        | motivo                                                       |
-+--------------------------+----------------+--------------------------------------------------------------+
-| Luan                     | Front-End      | Porque acreditou no nosso potencial e deixou o código leve.  |
-| João Gabriel de Lucca    | Banco de Dados | Porque nos entendeu, teve paciência e ensinou de verdade.    |
-+--------------------------+----------------+--------------------------------------------------------------+
+mysql> SELECT mensagem FROM turma
+WHERE professor = 'João Gabriel de Lucca';
+
+"Obrigado por ensinar com paciência, acreditar na nossa turma e provar que aprender pode ser leve."
+
+mysql> SELECT legado FROM professores
+WHERE nome = 'João Gabriel de Lucca';
+
+"Quando faltava professor, apareceu alguém que virou referência."
 
 mysql> COMMIT;
-Query OK. Memória salva com sucesso.
-mysql> SELECT mensagem FROM turma WHERE professor = 'João Gabriel de Lucca';
 
-"Obrigado por transformar Banco de Dados em algo mais leve, humano e possível para todos nós."
+Query OK.
+Mudanças salvas com sucesso.
 
-`
+mysql> SELECT status FROM memoria_da_turma;
 
-    let i = 0;
-    let velocidade = 30
-    let terminal = document.getElementById("textoTerminal")
-    terminal.innerHTML = ""
-    
-    function digitar() {
-    if(i < texto.length) {
-        terminal.textContent += texto.charAt(i)
-        i++
-        setTimeout(digitar, velocidade)
++----------------------+
+| status               |
++----------------------+
+| Gratidão eterna.     |
++----------------------+
+`;
+
+  let i = 0;
+  let velocidade = 30;
+
+  let textoTerminal = document.getElementById("textoTerminal");
+  let terminalBox = document.getElementById("terminal");
+
+  textoTerminal.innerHTML = "";
+
+  function digitar() {
+    if (i < texto.length) {
+      textoTerminal.textContent += texto.charAt(i);
+
+      terminalBox.scrollTop = terminalBox.scrollHeight;
+
+      i++;
+      setTimeout(digitar, velocidade);
     }
+  }
 
-    }
-    digitar()
+  digitar();
 
     const btnFecharT = document.getElementById("btnFecharT")
 

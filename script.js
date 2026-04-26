@@ -82,7 +82,7 @@ const acoes = {
     mostarInfos(
       "img/gui.jpg",
       "Guilherme Bueno",
-      "''Fala João! Guilherme aqui, primeiramente quero primeiramente agradecer a você por tudo que você nos  ensinou e o que você me ensinou também, com certeza você foi um dos melhores professor que já tive e sem duvidas a noticia que você vai sair e ingressar em uma nova carreira vai deixar nós triste, mas feliz de que saber de você está indo atrás dos seus objetivos, então estou aqui para te desejar muito sucesso nessa nova etapa de vida/carreira, e é isso, Desejo tudo de bom para você João!''",
+      "''Fala João! Guilherme aqui, primeiramente quero agradecer a você por tudo que você nos  ensinou e o que você me ensinou também, com certeza você foi um dos melhores professor que já tive e sem duvidas a noticia que você vai sair e ingressar em uma nova carreira vai deixar nós triste, mas feliz de que saber de você está indo atrás dos seus objetivos, então estou aqui para te desejar muito sucesso nessa nova etapa de vida/carreira, e é isso, Desejo tudo de bom para você João!''",
     ),
   pessoa12: () =>
     mostarInfos("img/kecio.jpg", "Kecio", "''🍎Maracujá Maracujá 🍎''"),
@@ -104,7 +104,7 @@ const acoes = {
       "Matheus Xavier",
       "''Você é uma das pessoas mais incríveis que já conheci na vida. Para mim, você é mais do que um professor; é um exemplo de ser humano. Você é uma inspiração para mim, não só como profissional, mas como homem. Fico triste por nossa jornada juntos estar acabando, mas fico feliz porque ela aconteceu.''",
     ),
-  pessoa16: () => mostarInfos("img/alunos.jpg", "nbjsdngfs", "sdjndçj"),
+  pessoa16: () => mostarInfos("img/vini.jpg", "Vinicius Santos", "''João, você sempre brincava dizendo que o Luan iria embora, e na primeira vez que isso aconteceu eu fiquei muito mal. Tentei disfarçar com raiva, mas no fundo aquilo só mostrou o quanto vocês significam para mim. E isso não é à toa, passamos o dia inteiro no Salotti, convivendo juntos, aprendendo e vivendo momentos que vou levar comigo.Ter pessoas como você e o Luan na nossa vida é sinal de sorte. Pessoas que deixam o ambiente leve, que sabem brincar, ensinar e também se colocar no lugar dos outros são raras de encontrar.Parece ironia, mas depois de momentos difíceis sempre veio algo bom. O segundo ano estava sem professor, e então você apareceu. Depois o Valdiram saiu, e chegou o Luan. Como se a vida sempre desse um jeito de colocar as pessoas certas no caminho.Tenho certeza de que, onde quer que vocês estejam, serão muito felizes e continuarão marcando a vida de muitas pessoas, assim como marcaram a minha.''"),
   pessoa17: () => mostarInfos("img/alunos.jpg", "nbjsdngfs", "sdjndçj"),
   pessoa18: () => mostarInfos("img/alunos.jpg", "nbjsdngfs", "sdjndçj"),
   pessoa19: () => mostarInfos("img/alunos.jpg", "nbjsdngfs", "sdjndçj"),

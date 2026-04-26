@@ -50,25 +50,65 @@ const acoes = {
     ),
   pessoa6: () =>
     mostarInfos(
-      "img/alunos.jpg",
-      "Vinicius 4 a volta dos que não se foram",
-      "PC ta morrendo",
+      "img/Cezar.jpg",
+      "César",
+      "''Cê me ensinou que nenhuma tentativa é em vão, é sempre para que eu melhore, mesmo que o código já tenha quebrado 28 vezes com erro na mesma linha (que não tem nada escrito)''",
     ),
-  pessoa7: () => mostarInfos("img/alunos.jpg", "Vinciussss", "asfas"),
-  pessoa8: () => mostarInfos("img/alunos.jpg", "nbjsdngfs", "sdjndçj"),
-  pessoa9: () => mostarInfos("img/alunos.jpg", "nbjsdngfs", "sdjndçj"),
-  pessoa10: () => mostarInfos("img/alunos.jpg", "nbjsdngfs", "sdjndçj"),
-  pessoa11: () => mostarInfos("img/alunos.jpg", "nbjsdngfs", "sdjndçj"),
-  pessoa12: () => mostarInfos("img/alunos.jpg", "nbjsdngfs", "sdjndçj"),
-  pessoa13: () => mostarInfos("img/alunos.jpg", "nbjsdngfs", "sdjndçj"),
-  pessoa14: () => mostarInfos("img/alunos.jpg", "nbjsdngfs", "sdjndçj"),
-  pessoa15: () => mostarInfos("img/alunos.jpg", "nbjsdngfs", "sdjndçj"),
+  pessoa7: () =>
+    mostarInfos(
+      "img/clara  (1).jpg",
+      "Clara Santana",
+      "''Olá João, tudo bem?Passando para agradecer por aquilo que você pôde fazer por nós, muito obrigada, espero que sua jornada seja iluminada e que tudo dê certo, espero também que você tenha menos dor de cabeça daqui pra frente, você é uma pessoa incrível e vai fazer falta. Bjss da clarinha''",
+    ),
+  pessoa8: () =>
+    mostarInfos(
+      "img/Emerson.jpg",
+      "Francisco Emerson",
+      "''João, foi um prazer conhecer você. Você é uma pessoa incrível e, sem dúvida, um dos melhores professores que já passaram por esse técnico. Nem sei como teria sido sem a sua ajuda e dedicação.''",
+    ),
+  pessoa9: () =>
+    mostarInfos(
+      "img/Gabriel .jpg",
+      "Gabriel",
+      "''João, foi bom te conhecer por todo esse tempo, esses dois anos vc tem me ensinado muita coisa, e assim como vc disse, e eu gostaria muito q acontecesse, tomara q a gnt se encontre nesse mundo da ti no futuro, em toda minha vida, nunca tive professores tão fechamento q nem vc e o Luan, principalmente vc, q nunca faltou com compromisso e respeito com a gnt.De verdade, dá até um vazio saber q vc não vai mais estar ali no dia a dia, explicando, zoando com a gnt e ao mesmo tempo cobrando quando precisava. Vc conseguiu ser aquele tipo de professor q não fica só na matéria, mas q marca a vida da gnt, tá ligado? Ensinou não só sobre TI, mas tbm sobre responsabilidade, postura e correr atrás do q a gnt quer.Pode ter certeza q muita coisa q eu vou levar pra frente foi por sua causa, pelas dicas, pelas broncas e até pelas conversas mais tranquilas. Nem todo mundo tem a sorte de ter alguém assim no caminho, então sou grato de verdade por isso.Espero q essa nova fase seja ainda melhor pra vc, q dê tudo certo nos seus planos e q vc continue impactando a vida de outras pessoas do mesmo jeito q impactou a nossa. E se depender de mim, esse reencontro no mundo da TI vai acontecer sim, e vai ser brabo, Tmj.Obrigado por tudo mesmo, João. Vai fazer falta dms.''",
+    ),
+  pessoa10: () =>
+    mostarInfos(
+      "img/glledesson.jpg",
+      "Glledesson",
+      "''Iae, João! Espero que você tenha muito sucesso na sua nova jornada, que seja muito feliz. Te desejo tudo de bom nessa nova etapa e que ainda sobre um tempinho pra um joguinho à noite!''",
+    ),
+  pessoa11: () =>
+    mostarInfos(
+      "img/gui.jpg",
+      "Guilherme Bueno",
+      "''Fala João! Guilherme aqui, primeiramente quero primeiramente agradecer a você por tudo que você nos  ensinou e o que você me ensinou também, com certeza você foi um dos melhores professor que já tive e sem duvidas a noticia que você vai sair e ingressar em uma nova carreira vai deixar nós triste, mas feliz de que saber de você está indo atrás dos seus objetivos, então estou aqui para te desejar muito sucesso nessa nova etapa de vida/carreira, e é isso, Desejo tudo de bom para você João!''",
+    ),
+  pessoa12: () =>
+    mostarInfos("img/kecio.jpg", "Kecio", "''🍎Maracujá Maracujá 🍎''"),
+  pessoa13: () =>
+    mostarInfos(
+      "img/larisão.jpg",
+      "Larisão",
+      "''João, quando você me falou que iria sair, fiquei muito feliz e muito triste ao mesmo tempo. Feliz por você estar alcançando lugares mágicos na sua carreira, mas triste por perder um amigo que sempre estava aqui para conversar com a gente e deixar um clima de paz.Às vezes a gente dá umas mancadas, mas saiba que te amamos muito! Te desejo tudo de bom nessa sua nova caminhada e muita sabedoria. Você é foda! Vamos sentir muita saudade, então vê se não esquece da gente, hein? Queremos você na nossa formatura e no interclasse!Te amamos. Com carinho, Larissão.''",
+    ),
+  pessoa14: () =>
+    mostarInfos(
+      "img/Victor hugo.jpg",
+      "Victor",
+      "''Por mais q tenha muito pouco tempo que estou na escola, percebi que vc é um bom professor mesmo sendo jovem como nós. Deus abençoe sua trajetória e felicidades!!''",
+    ),
+  pessoa15: () =>
+    mostarInfos(
+      "img/xavier.jpg",
+      "Matheus Xavier",
+      "''Você é uma das pessoas mais incríveis que já conheci na vida. Para mim, você é mais do que um professor; é um exemplo de ser humano. Você é uma inspiração para mim, não só como profissional, mas como homem. Fico triste por nossa jornada juntos estar acabando, mas fico feliz porque ela aconteceu.''",
+    ),
   pessoa16: () => mostarInfos("img/alunos.jpg", "nbjsdngfs", "sdjndçj"),
   pessoa17: () => mostarInfos("img/alunos.jpg", "nbjsdngfs", "sdjndçj"),
   pessoa18: () => mostarInfos("img/alunos.jpg", "nbjsdngfs", "sdjndçj"),
   pessoa19: () => mostarInfos("img/alunos.jpg", "nbjsdngfs", "sdjndçj"),
   pessoa20: () => mostarInfos("img/alunos.jpg", "nbjsdngfs", "sdjndçj"),
-  
 };
 
 pessoas.addEventListener('click', (e) => {
@@ -109,6 +149,7 @@ Query OK. Memória salva com sucesso.
 mysql> SELECT mensagem FROM turma WHERE professor = 'João Gabriel de Lucca';
 
 "Obrigado por transformar Banco de Dados em algo mais leve, humano e possível para todos nós."
+
 `
 
     let i = 0;

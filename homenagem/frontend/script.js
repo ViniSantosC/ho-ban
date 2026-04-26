@@ -68,3 +68,103 @@ pessoas.addEventListener('click', (e) => {
         acoes[acaoDesejada]()
     }
 })
+
+
+
+    function mostrarMensagem() {
+        const conteinerMensagem = document.getElementById("conteinerMensagem");
+        conteinerMensagem.classList.remove('modal-hidden')
+
+        let texto = `
+mysql> INSERT INTO professores_que_nos_marcaram 
+(nome, materia, motivo)
+VALUES 
+('João Gabriel de Lucca', 'Banco de Dados', 
+'Porque ensinou com paciência, entendeu nossas dificuldades e marcou nossa turma.');
+
+mysql> SELECT * FROM professores_que_nos_marcaram;
+
++--------------------------+----------------+--------------------------------------------------------------+
+| nome                     | materia        | motivo                                                       |
++--------------------------+----------------+--------------------------------------------------------------+
+| Luan                     | Front-End      | Porque acreditou no nosso potencial e deixou o código leve.  |
+| João Gabriel de Lucca    | Banco de Dados | Porque nos entendeu, teve paciência e ensinou de verdade.    |
++--------------------------+----------------+--------------------------------------------------------------+
+
+mysql> COMMIT;
+Query OK. Memória salva com sucesso.
+mysql> SELECT mensagem FROM turma WHERE professor = 'João Gabriel de Lucca';
+
+"Obrigado por transformar Banco de Dados em algo mais leve, humano e possível para todos nós."
+`
+
+    let i = 0;
+    let velocidade = 50
+    let terminal = document.getElementById("textoTerminal")
+    terminal.innerHTML = ""
+    
+    function digitar() {
+    if(i < texto.length) {
+        terminal.textContent += texto.charAt(i)
+        i++
+        setTimeout(digitar, velocidade)
+    }
+
+    }
+    digitar()
+
+    const btnFecharT = document.getElementById("btnFecharT")
+
+    btnFecharT.addEventListener('click', () => {
+        conteinerMensagem.classList.add('modal-hidden');
+    });
+
+    }
+
+`caso o texto do terminal não estaja ficando bom e ficando errado varias versões diferentess: 
+Versão padrão: 
+mysql> INSERT INTO professores_que_nos_marcaram 
+(nome, materia, motivo)
+VALUES 
+('João Gabriel de Lucca', 'Banco de Dados', 
+'Porque ensinou com paciência, entendeu nossas dificuldades e marcou nossa turma.');
+
+mysql> SELECT * FROM professores_que_nos_marcaram;
+
++--------------------------+----------------+--------------------------------------------------------------+
+| nome                     | materia        | motivo                                                       |
++--------------------------+----------------+--------------------------------------------------------------+
+| Luan                     | Front-End      | Porque acreditou no nosso potencial e deixou o código leve. |
+| João Gabriel de Lucca    | Banco de Dados | Porque nos entendeu, teve paciência e ensinou de verdade.   |
++--------------------------+----------------+--------------------------------------------------------------+
+
+mysql> COMMIT;
+Query OK. Memória salva com sucesso.
+mysql> SELECT mensagem FROM turma WHERE professor = 'João Gabriel de Lucca';
+
+"Obrigado por transformar Banco de Dados em algo mais leve, humano e possível para todos nós."
+
+versão tela dividida:
+
+mysql> INSERT INTO professores_que_nos_marcaram 
+(nome, materia, motivo)
+VALUES 
+('João Gabriel de Lucca', 'Banco de Dados', 
+'Porque ensinou com paciência, entendeu nossas dificuldades e marcou nossa turma.');
+
+mysql> SELECT * FROM professores_que_nos_marcaram;
+
++--------------------------+----------------+--------------------------------------------------------------+
+| nome                     | materia        | motivo                                                       |
++--------------------------+----------------+--------------------------------------------------------------+
+| Luan                     | Front-End      | Porque acreditou no nosso potencial e deixou o código leve.  |
+| João Gabriel de Lucca    | Banco de Dados | Porque nos entendeu, teve paciência e ensinou de verdade.    |
++--------------------------+----------------+--------------------------------------------------------------+
+
+mysql> COMMIT;
+Query OK. Memória salva com sucesso.
+mysql> SELECT mensagem FROM turma WHERE professor = 'João Gabriel de Lucca';
+
+"Obrigado por transformar Banco de Dados em algo mais leve, humano e possível para todos nós."
+
+`

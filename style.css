@@ -126,7 +126,7 @@ main {
   display: block;
   margin: 1rem auto;
   padding: 1.5rem;
-  width: 16%;
+  width: 20%;
 
   background: #0e2b51;
   color: #f8f6f1;
@@ -397,6 +397,65 @@ main {
   height: 100%;
 }
 
+.fla-section{
+  background: linear-gradient(135deg, #0b0b0b 0%, #1a0000 45%, #8b0000 100%);
+  color: #fff;
+  padding: 90px 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.fla-section::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(255,255,255,0.04) 0px,
+    rgba(255,255,255,0.04) 2px,
+    transparent 2px,
+    transparent 18px
+  );
+}
+
+.fla-content{
+  position: relative;
+  z-index: 2;
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.fla-video{
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  border-radius: 22px;
+  border: 3px solid #d4af37;
+  box-shadow: 0 25px 60px rgba(0,0,0,.45);
+}
+
+.fla-texto h2{
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  color: #fff;
+}
+
+.fla-texto span{
+  color: #d4af37;
+  font-style: italic;
+}
+
+.fla-texto p{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #f1f1f1;
+}
+
 .nomeal {
   font-size: 2rem;
   margin: 1rem 3rem;
@@ -525,6 +584,11 @@ main {
   text-align: center;
   color: #6b6b6b;
 }
+.video video {
+width: 20%;
+border-radius: 1rem;
+border: 1px solid black;
+}
 /* Media Queries para Responsividade */
 
 @media (max-width: 1200px) {
@@ -540,6 +604,30 @@ main {
 }
 
 @media (max-width: 992px) {
+   .fla-section{
+    padding: 70px 24px;
+  }
+
+  .fla-content{
+    grid-template-columns: 1fr;
+    gap: 35px;
+    text-align: center;
+  }
+
+  .fla-video{
+    width: 100%;
+    max-width: 420px;
+    height: 520px;
+    margin: 0 auto;
+  }
+
+  .fla-texto h2{
+    font-size: 3rem;
+  }
+
+  .fla-texto p{
+    font-size: 1rem;
+  }
   .flex {
     flex-direction: column;
     align-items: center;
@@ -640,12 +728,32 @@ main {
 }
 
 @media (max-width: 600px) {
+   .fla-section{
+    padding: 55px 18px;
+  }
+
+  .fla-video{
+    max-width: 300px;
+    height: 430px;
+    border-radius: 18px;
+  }
+
+  .fla-texto h2{
+    font-size: 2.3rem;
+    line-height: 1.1;
+  }
+
+  .fla-texto p{
+    font-size: .95rem;
+    line-height: 1.6;
+  }
  .btnfim{
       display: none;
    }
    
   .titulo {
     font-size: 3.5rem;
+    
   }
   .comeco {
     width: 90%;
@@ -665,6 +773,7 @@ main {
   }
   .subtitulo4 {
     font-size: 1.2rem;
+    margin: 1rem auto;
    
   }
   #modal-content{

@@ -12,7 +12,7 @@ html {
   scroll-margin-top: 50px;
 }
 #memorias {
-  scroll-margin-top:125px ;
+  scroll-margin-top: 125px;
 }
 #despedida {
   scroll-margin-top: 90px;
@@ -213,10 +213,12 @@ main {
 }
 .aluno h1 {
   color: #10235b;
+  text-align: center;
 }
 .aluno p {
   color: #6b6b6b;
   font-size: 1.5rem;
+  text-align: center;
 }
 .btn1:hover img,
 .btn2:hover img,
@@ -346,10 +348,10 @@ main {
   font-style: italic;
 }
 .subtitulo4 {
-    font-family: "Poppins", sans-serif;
-    text-align: center;
-    font-weight: 400;
-    color: #777;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  color: #777;
 }
 #modal-overlay {
   position: fixed;
@@ -359,25 +361,54 @@ main {
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
   display: flex;
-  justify-content: center; 
-  align-items: center;     
-  z-index: 1000;          
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 }
 #modal-content {
   background: white;
   border-radius: 30px;
-  width: 30%;
-  height: 70%;
+  width: 75%;
+  height: 55%;
+  animation: surgir 0.5s ease;
+  display: flex;
   position: relative;
+}
+@keyframes surgir {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 .modal-hidden {
   display: none !important;
 }
 
 #imgAluno {
-  border-radius: 30px 30px 0 0;
-  width: 100%;
-  height: 40%;
+  border-radius: 1rem 0rem 0rem 1rem;
+
+  height: 100%;
+}
+
+.nomeal {
+  font-size: 2rem;
+  margin: 1rem 3rem;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  color: #0b0b3b;
+}
+.descriçãoal {
+  line-height: 1.7;
+letter-spacing: .2px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin: 0 1rem;
+  font-size: 1rem;
+  color:#1f1f1f;
 }
 #btn-fechar {
   background: transparent;
@@ -385,7 +416,7 @@ main {
   font-size: 30px;
 
   position: absolute;
-  color: white;
+  color: black;
   top: 10px;
   right: 15px;
   cursor: pointer;
@@ -436,39 +467,41 @@ main {
 }
 
 .parte4 {
-    background-color: #0b1f5a;
-    background-image: radial-gradient(rgba(212,175,55,0.18) 1px, transparent 1px);
-    background-size: 40px 40px;
-    height: 100%;
-    /* troquei height: 100vh por 100% para a despedida não ficar com espaço sobrando la embaixo se der algum problema com ela depois aqui esta o aviso */
-    padding: 1rem;
+  background-color: #0b1f5a;
+  background-image: radial-gradient(
+    rgba(212, 175, 55, 0.18) 1px,
+    transparent 1px
+  );
+  background-size: 40px 40px;
+  height: 100%;
+  /* troquei height: 100vh por 100% para a despedida não ficar com espaço sobrando la embaixo se der algum problema com ela depois aqui esta o aviso */
+  padding: 1rem;
 }
 .btnfim {
-    display: block;
-    margin: 2rem auto;
-    width: 16%;
-    padding: 1.5rem;
-    font-size: 1.2rem;
-    border: #d4af37 1px solid;
-    border-radius: 2.5rem;
-    background-color: transparent;
-    color: #d4af37;
-    transition: all 0.3s ease;
+  display: block;
+  margin: 2rem auto;
+  width: 16%;
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  border: #d4af37 1px solid;
+  border-radius: 2.5rem;
+  background-color: transparent;
+  color: #d4af37;
+  transition: all 0.3s ease;
 }
 .btnfim:hover {
-    color: #10315b;
-    background-color: #b58a00;
+  color: #10315b;
+  background-color: #b58a00;
 }
 .pu {
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    color: white;
-    font-size: 1.2rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 1.2rem;
 }
 .pd {
-    font-size: 1rem;
-    font-family: "Poppins", sans-serif;
-    text-align: center;
-    color: #5f6368;
-    
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: #5f6368;
 }

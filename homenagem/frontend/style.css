@@ -387,6 +387,9 @@ main {
 .modal-hidden {
   display: none !important;
 }
+.a {
+  text-decoration: none;
+}
 
 #imgAluno {
   border-radius: 1rem 0rem 0rem 1rem;
@@ -431,9 +434,9 @@ letter-spacing: .2px;
 #btnFecharT {
   position: absolute;
   color: white;
-  top: 30px;
+  top: 50px;
   font-size: 30px;
-  right: 35px;
+  right: 55px;
   border: none;
   background: transparent;
   cursor: pointer;

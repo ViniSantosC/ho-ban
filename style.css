@@ -604,6 +604,56 @@ width: 20%;
 border-radius: 1rem;
 border: 1px solid black;
 }
+
+.turma-destaque{
+  position: relative;
+  width: 100%;
+  height: 140vh;
+
+  background: url("img/sala4.jpg") center center/cover no-repeat;
+  overflow: hidden;
+}
+
+
+.overlay{
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    rgba(11,31,77,.72) 0%,
+    rgba(11,31,77,.42) 45%,
+    rgba(11,31,77,.10) 100%
+  );
+}
+
+.texto-turma{
+  position: absolute;
+  left: 60px;
+  bottom: 70px;
+  z-index: 2;
+  max-width: 650px;
+  color: white;
+}
+
+.texto-turma span{
+  color: #d4af37;
+  font-size: .9rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.texto-turma h2{
+  font-size: 4rem;
+  line-height: 1.05;
+  margin: 18px 0;
+}
+
+.texto-turma p{
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: rgba(255,255,255,.88);
+}
 /* Media Queries para Responsividade */
 
 @media (max-width: 1200px) {
@@ -743,6 +793,7 @@ border: 1px solid black;
 }
 
 @media (max-width: 600px) {
+  
    .fla-section{
     padding: 55px 18px;
   }
@@ -821,5 +872,32 @@ border: 1px solid black;
   .as a {
     font-size: 1rem;
     margin: 0 0.5rem;
+  }
+   .turma-destaque{
+    height: 100vh;
+    background-position: center top;
+  }
+
+  .overlay{
+    background: linear-gradient(
+      to top,
+      rgba(11,31,77,.95),
+      rgba(11,31,77,.45)
+    );
+  }
+
+  .texto-turma{
+    left: 20px;
+    right: 20px;
+    bottom: 30px;
+    max-width: 100%;
+  }
+
+  .texto-turma h2{
+    font-size: 2.4rem;
+  }
+
+  .texto-turma p{
+    font-size: .95rem;
   }
 }

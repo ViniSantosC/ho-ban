@@ -88,9 +88,24 @@ const acoes = {
     mostarInfos("img/kecio.jpg", "Kecio", "''🍎Maracujá Maracujá 🍎''"),
   pessoa13: () =>
     mostarInfos(
-      "img/larisão .jpg",
+      "img/larisao.jpg",
       "Larissão",
-      "''João, quando você me falou que iria sair, fiquei muito feliz e muito triste ao mesmo tempo. Feliz por você estar alcançando lugares mágicos na sua carreira, mas triste por perder um amigo que sempre estava aqui para conversar com a gente e deixar um clima de paz.Às vezes a gente dá umas mancadas, mas saiba que te amamos muito! Te desejo tudo de bom nessa sua nova caminhada e muita sabedoria. Você é foda! Vamos sentir muita saudade, então vê se não esquece da gente, hein? Queremos você na nossa formatura e no interclasse!Te amamos. Com carinho, Larissão.''",
+      `João, quando você me falou que iria sair, fiquei muito feliz e muito triste ao mesmo tempo.
+
+Feliz por você estar alcançando lugares mágicos na sua carreira, mas triste por perder um amigo que sempre estava aqui para conversar com a gente e deixar um clima de paz.
+
+Às vezes a gente dá umas mancadas, mas saiba que te amamos muito.
+
+Te desejo tudo de bom nessa sua nova caminhada e muita sabedoria. Você é foda!
+
+Vamos sentir muita saudade, então vê se não esquece da gente, hein?
+
+Queremos você na nossa formatura e no interclasse!
+
+Te amamos.
+
+Com carinho,
+Larissão 🤍`,
     ),
   pessoa14: () =>
     mostarInfos(
@@ -104,10 +119,30 @@ const acoes = {
       "Matheus Xavier",
       "''Você é uma das pessoas mais incríveis que já conheci na vida. Para mim, você é mais do que um professor; é um exemplo de ser humano. Você é uma inspiração para mim, não só como profissional, mas como homem. Fico triste por nossa jornada juntos estar acabando, mas fico feliz porque ela aconteceu.''",
     ),
-  pessoa16: () => mostarInfos("img/vini.jpg", "Vinicius Santos", "''João, você sempre brincava dizendo que o Luan iria embora, e na primeira vez que isso aconteceu eu fiquei muito mal. Tentei disfarçar com raiva, mas no fundo aquilo só mostrou o quanto vocês significam para mim. E isso não é à toa, passamos o dia inteiro no Salotti, convivendo juntos, aprendendo e vivendo momentos que vou levar comigo.Ter pessoas como você e o Luan na nossa vida é sinal de sorte. Pessoas que deixam o ambiente leve, que sabem brincar, ensinar e também se colocar no lugar dos outros são raras de encontrar.Parece ironia, mas depois de momentos difíceis sempre veio algo bom. O segundo ano estava sem professor, e então você apareceu. Depois o Valdiram saiu, e chegou o Luan. Como se a vida sempre desse um jeito de colocar as pessoas certas no caminho.Tenho certeza de que, onde quer que vocês estejam, serão muito felizes e continuarão marcando a vida de muitas pessoas, assim como marcaram a minha.''"),
-  pessoa17: () => mostarInfos("img/alunos.jpg", "nbjsdngfs", "sdjndçj"),
-  pessoa18: () => mostarInfos("img/alunos.jpg", "nbjsdngfs", "sdjndçj"),
-  pessoa19: () => mostarInfos("img/alunos.jpg", "nbjsdngfs", "sdjndçj"),
+  pessoa16: () =>
+    mostarInfos(
+      "img/vini.jpg",
+      "Vinicius Santos",
+      "''João, você sempre brincava dizendo que o Luan iria embora, e na primeira vez que isso aconteceu eu fiquei muito mal. Tentei disfarçar com raiva, mas no fundo aquilo só mostrou o quanto vocês significam para mim. E isso não é à toa, passamos o dia inteiro no Salotti, convivendo juntos, aprendendo e vivendo momentos que vou levar comigo.Ter pessoas como você e o Luan na nossa vida é sinal de sorte. Pessoas que deixam o ambiente leve, que sabem brincar, ensinar e também se colocar no lugar dos outros são raras de encontrar.Parece ironia, mas depois de momentos difíceis sempre veio algo bom. O segundo ano estava sem professor, e então você apareceu. Depois o Valdiram saiu, e chegou o Luan. Como se a vida sempre desse um jeito de colocar as pessoas certas no caminho.Tenho certeza de que, onde quer que vocês estejam, serão muito felizes e continuarão marcando a vida de muitas pessoas, assim como marcaram a minha.''",
+    ),
+  pessoa17: () =>
+    mostarInfos(
+      "img/athos.jpg",
+      "Athos",
+      "''Obrigado João, sou grato pelos seus ensinamentos e você é muito resenha, tmj''",
+    ),
+  pessoa18: () =>
+    mostarInfos(
+      "img/rian silva.jpg",
+      "Rian",
+      "''Obrigado por tudo que me ensinou João, seus ensinamentos não foram apenas escolares, mas , sim pra vida, obrigado por ser meu professor de t.i!''",
+    ),
+  pessoa19: () =>
+    mostarInfos(
+      "img/isabelle (2).jpg",
+      "Isabelle",
+      "''Oi, João.Seja menos chato com os próximos alunos (se for dar aula) e sucesso na sua nova carreira e conquistas. Sei que ser professor não é fácil e mesmo assim você continuou dando aula pra gente, obrigado!(Ps:  você consegue ser resenha quando quer)''",
+    ),
   pessoa20: () => mostarInfos("img/alunos.jpg", "nbjsdngfs", "sdjndçj"),
 };
 

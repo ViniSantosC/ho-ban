@@ -143,7 +143,60 @@ Larissão 🤍`,
       "Isabelle",
       "''Oi, João.Seja menos chato com os próximos alunos (se for dar aula) e sucesso na sua nova carreira e conquistas. Sei que ser professor não é fácil e mesmo assim você continuou dando aula pra gente, obrigado!(Ps:  você consegue ser resenha quando quer)''",
     ),
-  pessoa20: () => mostarInfos("img/alunos.jpg", "nbjsdngfs", "sdjndçj"),
+  pessoa20: () =>
+    mostarInfos(
+      "img/David .jpg",
+      "David",
+      "''E aí, João! Beleza? Venho por meio desta mensagem demonstrar o quanto sou grato por você. Agradeço por todos os momentos divertidos que nos proporcionou, repletos de risadas e felicidade. E devo dizer que você é muito mais do que apenas nosso professor. Você é um modelo que todos nós queremos seguir, uma inspiração de quem podemos nos tornar em um futuro próximo. Tenho certeza de que, com todo o apoio que você nos deu, eu pelo menos vou chegar um pouco perto disso kkkk.As palavras chegam a ser um meio até meio limitado para descrever o quanto você é importante para todos nós. E, mesmo que você esteja indo embora, acho injusto me sentir triste por isso, pois desejo toda a felicidade e prosperidade para você, mesmo que isso signifique sua partida.Nunca perca a sua essência, João. Continue sendo essa pessoa incrível e maravilhosa que você sempre foi!''",
+    ),
+  pessoa21: () =>
+    mostarInfos(
+      "img/João lucas.jpg",
+      "João Lucas",
+      "''Querido professor, João, agradeço pelo direcionamento que você deu neste campo chamado tecnologia da informação, um instrutor bom de uma area da complexa como essa deve sim ter reconhecimento, agradeço por todas as conversas risadas, e por toda aventura desses longos 2 anos, que la na frente possamos nos encontrar…''",
+    ),
+  pessoa22: () =>
+    mostarInfos(
+      "img/Kauan.jpg",
+      "Kauan",
+      "''queria agradecer por toda a sua dedicação e paciência. Suas aulas fazem diferença de verdade e me ajudaram muito a aprender e crescer. Obrigado por acreditar nos alunos e por todo o esforço que você coloca no que faz''",
+    ),
+  pessoa23: () =>
+    mostarInfos(
+      "img/luis.jpg",
+      "Luis",
+      "''João muito obrigado por tudo até agora, você foi um professor excepcional, não só um professor mas um amigo também, espero que sua vida seja próspera e que Deus o abençoe sempre''",
+    ),
+  pessoa24: () =>
+    mostarInfos(
+      "img/Vinícius sousa.jpg",
+      "Vinicius Souza",
+      "''Obrigado por tudo João, nos falamos pouco mas suas aulas significaram muito pra mim, boa sorte na sua nova jornada''",
+    ),
+  pessoa25: () =>
+    mostarInfos(
+      "img/Luan .jpg",
+      "Luan Quaresma",
+      "''bora trabalha que passarinho que não acorda cedo morre de sede''",
+    ),
+  pessoa26: () =>
+    mostarInfos(
+      "img/valadares.jpg",
+      "Matheus Valadares",
+      "''Despedidas são sempre estranhas, um misto de nostalgia pelo que passou e um desafio pelo o que está por vim. Mas prefiro não ver isso como um ponto final, e sim como uma mudança de capítulo. As histórias que vc viveu com a gente continuaram guardadas, as resenhas, as broncas que serviram como aprendizado para todos nós e a torcida pelo seu sucesso permanece exatamente a mesma.Obrigado por ter feito parte da minha jornada e de todos nós. Que o seu caminho continue sendo iluminado e abençoado por Deus.Ass: Valadares''",
+    ),
+  pessoa27: () =>
+    mostarInfos(
+      "img/Victor .jpg",
+      "Victor Correa",
+      "''Não sei se eu deveria fazer algo grande ou pequeno devido a proximidade que você tinha com toda a turma, mas decidi por divagar e tentar expor aqui algo que pensei que fosse legal de você ler. Obrigado por todos esses anos conosco(mesmo que em momentos breves), por ter ensinado toda a turma tudo e mais um pouco para que a gente pudesse hoje trilhar um caminho profissional de cabeça erguida, foi gratificante ter você como um professor mesmo que não nos falássemos tanto, não sei ao certo o que se passa em sua vida ou o que se passou ao certo, mas tenho fé de que as coisas seguiram bem seja aonde estiver, agradeço por tudo o que me ensinou e por todo este tempo conosco, espero que possamos nos encontrar de novo e que eu possa agradecer pessoalmente e de verdade todo o conhecimento que foi passado. Deus lhe abençoe seja aonde for, Bom dia, Boa tarde, Boa Noite, câmbio Desligo''",
+    ),
+  pessoa28: () =>
+    mostarInfos(
+      "img/emanu 2.jpg",
+      "Emanu",
+      "''Oi, JoãoNem acredito que o momento de você ir embora chegou. Tô te escrevendo isso com o coração apertado e com lágrimas que não consigo esconder, porque cada uma delas carrega um peso,a tristeza de ver meu professor favorito e um grande amigo partindo, mas também a felicidade de saber que você vai conquistar o mundo.Vou sentir uma falta absurda de quando você começa a cantar do nada, sentir falta das suas broncas, que a gente sempre sabe que é por cuidado, e das nossas risadas em tantos outros momentos. O jeito que você trata a gente e a forma como você nos compreende fala muito sobre quem você é, mas também fala muito sobre nós. É raro achar alguém que nos entenda de verdade e que tenha um espírito tão igual ao nosso.Se hoje eu sou apaixonada pela tecnologia, o mérito é todo seu. Mas o que eu guardo com mais força não é só a matéria, são os seus conselhos. Eles são como a minha chave primária pra vida, sabe? Aquilo que é único e que organiza todo o resto, e eu vou levar cada um deles comigo para sempre. Dói saber que não vou ter seu sorriso e seu abraço por perto agora, mas sei que encerramos esse ciclo para abrir outro em breve, onde a gente possa se reencontrar.Obrigada por ser esse homem incrível. Você não passa pela vida de ninguém sem deixar uma marca, e na minha, você é para todo o sempre o meu eterno professor favorito.''",
+    ),
 };
 
 pessoas.addEventListener('click', (e) => {

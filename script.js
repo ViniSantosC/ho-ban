@@ -56,7 +56,7 @@ const acoes = {
     ),
   pessoa7: () =>
     mostarInfos(
-      "img/clara  (1).jpg",
+      "img/clara  (1) (1).jpg",
       "Clara Santana",
       "''Olá João, tudo bem?Passando para agradecer por aquilo que você pôde fazer por nós, muito obrigada, espero que sua jornada seja iluminada e que tudo dê certo, espero também que você tenha menos dor de cabeça daqui pra frente, você é uma pessoa incrível e vai fazer falta. Bjss da clarinha''",
     ),
@@ -82,14 +82,14 @@ const acoes = {
     mostarInfos(
       "img/gui.jpg",
       "Guilherme Bueno",
-      "''Fala João! Guilherme aqui, primeiramente quero agradecer a você por tudo que você nos  ensinou e o que você me ensinou também, com certeza você foi um dos melhores professor que já tive e sem duvidas a noticia que você vai sair e ingressar em uma nova carreira vai deixar nós triste, mas feliz de que saber de você está indo atrás dos seus objetivos, então estou aqui para te desejar muito sucesso nessa nova etapa de vida/carreira, e é isso, Desejo tudo de bom para você João!''",
+      "''Fala João! Guilherme aqui, primeiramente quero agradecer a você por tudo que você nos  ensinou e o que você me ensinou também, com certeza você foi um dos melhores professor que já tive e sem duvidas a noticia que você vai sair e ingressar em uma nova carreira vai deixar nós triste, mas feliz de saber que você está indo atrás dos seus objetivos, então estou aqui para te desejar muito sucesso nessa nova etapa de vida/carreira, e é isso, Desejo tudo de bom para você João!''",
     ),
   pessoa12: () =>
     mostarInfos("img/kecio.jpg", "Kecio", "''🍎Maracujá Maracujá 🍎''"),
   pessoa13: () =>
     mostarInfos(
       "img/larisão .jpg",
-      "Larisão",
+      "Larissão",
       "''João, quando você me falou que iria sair, fiquei muito feliz e muito triste ao mesmo tempo. Feliz por você estar alcançando lugares mágicos na sua carreira, mas triste por perder um amigo que sempre estava aqui para conversar com a gente e deixar um clima de paz.Às vezes a gente dá umas mancadas, mas saiba que te amamos muito! Te desejo tudo de bom nessa sua nova caminhada e muita sabedoria. Você é foda! Vamos sentir muita saudade, então vê se não esquece da gente, hein? Queremos você na nossa formatura e no interclasse!Te amamos. Com carinho, Larissão.''",
     ),
   pessoa14: () =>
@@ -156,7 +156,7 @@ Query OK, 1 row affected.
 mysql> SELECT mensagem FROM turma
 WHERE professor = 'João Gabriel de Lucca';
 
-"Obrigado por ensinar com paciência, acreditar na nossa turma e provar que aprender pode ser leve."
+"O que a gente tem que aprender é a logica, porque o codigo até um macaco escreve."
 
 mysql> SELECT legado FROM professores
 WHERE nome = 'João Gabriel de Lucca';
@@ -178,7 +178,7 @@ mysql> SELECT status FROM memoria_da_turma;
 `;
 
   let i = 0;
-  let velocidade = 30;
+  let velocidade = 50;
 
   let textoTerminal = document.getElementById("textoTerminal");
   let terminalBox = document.getElementById("terminal");

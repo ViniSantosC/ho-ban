@@ -526,7 +526,24 @@ main {
   font-size: 16px;
   box-shadow: 0 0 25px rgba(0, 255, 136, 0.15);
   border: 1px solid rgba(0, 255, 136, 0.2);
-  overflow: hidden;
+  overflow-x: auto;
+}
+.terminal::-webkit-scrollbar {
+  height: 10px;    
+}
+.terminal::-webkit-scrollbar-thumb:hover {
+  background: rgb(3, 94, 3);
+}
+.terminal::-webkit-scrollbar-thumb {
+  background: forestgreen;        /* Cor da barra (verde) */
+  border-radius: 10px;
+  border: 2px solid #000000;  /* Cria um espaçamento entre a barra e a borda */
+}
+
+  
+.terminal::-webkit-scrollbar-track {
+  background: #000000;        /* Cor do fundo (preto) */
+  border-radius: 10px;
 }
 #textoTerminal {
   white-space: pre;
@@ -549,9 +566,10 @@ main {
     transparent 1px
   );
   background-size: 40px 40px;
+  
   height: 100%;
   /* troquei height: 100vh por 100% para a despedida não ficar com espaço sobrando la embaixo se der algum problema com ela depois aqui esta o aviso */
-  padding: 1rem;
+  padding: 7rem 1rem 1rem 1rem;
 }
 .btnfim {
   display: block;

@@ -90,22 +90,11 @@ const acoes = {
     mostarInfos(
       "img/larisão .jpg",
       "Larissão",
-      `João, quando você me falou que iria sair, fiquei muito feliz e muito triste ao mesmo tempo.
+      `''João, quando você me falou que iria sair, fiquei muito feliz e muito triste ao mesmo tempo. Feliz por você estar alcançando lugares mágicos na sua carreira, mas triste por perder um amigo que sempre estava aqui para conversar com a gente e deixar um clima de paz.Às vezes a gente dá umas mancadas, mas saiba que te amamos muito! Te desejo tudo de bom nessa sua nova caminhada e muita sabedoria. Você é foda! Vamos sentir muita saudade, então vê se não esquece da gente, hein? Queremos você na nossa formatura e no interclasse!Te amamos. Com carinho, Larissão.
 
-Feliz por você estar alcançando lugares mágicos na sua carreira, mas triste por perder um amigo que sempre estava aqui para conversar com a gente e deixar um clima de paz.
-
-Às vezes a gente dá umas mancadas, mas saiba que te amamos muito.
-
-Te desejo tudo de bom nessa sua nova caminhada e muita sabedoria. Você é foda!
-
-Vamos sentir muita saudade, então vê se não esquece da gente, hein?
-
-Queremos você na nossa formatura e no interclasse!
-
-Te amamos.
-
-Com carinho,
-Larissão 🤍`,
+João, quando você me falou que iria sair, fiquei com o coração dividido de um jeito que é difícil até de explicar. Ao mesmo tempo em que fiquei muito feliz por você — porque eu sei que você merece conquistar o mundo e viver coisas incríveis — também bateu uma tristeza enorme por imaginar a nossa rotina sem você por perto. Você sempre foi aquele tipo de pessoa que faz diferença, sabe? Não é só mais um amigo… é alguém que traz leveza, que escuta, que aconselha, que faz a gente rir quando tá tudo meio bagunçado. Você tem uma energia muito boa, dessas que deixam o ambiente mais tranquilo, mais leve, mais verdadeiro. E isso não é algo que se encontra em qualquer pessoa. A gente sabe que nem sempre foi perfeito, que às vezes rolaram umas mancadas — porque faz parte, né? — mas nada disso apaga o carinho, o respeito e a importância que você tem pra gente. Pelo contrário, só mostra o quanto nossa amizade é real, porque mesmo com tudo, o que fica é o amor e as memórias boas. Eu tenho muito orgulho de você, de verdade. Ver você correndo atrás dos seus sonhos, se esforçando e conquistando coisas novas é inspirador. Você merece cada oportunidade que está aparecendo, merece crescer, evoluir e viver tudo de melhor que a vida tem pra oferecer. Mas não vou mentir… vai fazer muita falta. As conversas, as risadas, os momentos aleatórios, tudo isso vai deixar um vazio aqui. Só que, ao mesmo tempo, eu sei que amizade de verdade não acaba com distância. Então nem pense em sumir, viu? A gente vai cobrar mensagem, ligação, presença — nem que seja virtualmente 😂. E ó, já fica avisado: queremos você na nossa formatura, no interclasse, em tudo! Você faz parte da nossa história, e isso não muda. Não importa onde você esteja, sempre vai ter um lugar aqui com a gente. Que essa nova fase seja cheia de coisas incríveis, de aprendizados, de conquistas e de felicidade. Que você continue sendo essa pessoa incrível, com esse coração gigante e essa luz que você carrega. A gente te ama muito, de verdade. Nunca esquece disso.
+Com todo carinho do mundo,
+Larissão 🤍''`,
     ),
   pessoa14: () =>
     mostarInfos(
@@ -141,7 +130,7 @@ Larissão 🤍`,
     mostarInfos(
       "img/isabelle (2).jpg",
       "Isabelle",
-      "''Oi, João.Seja menos chato com os próximos alunos (se for dar aula) e sucesso na sua nova carreira e conquistas. Sei que ser professor não é fácil e mesmo assim você continuou dando aula pra gente, obrigado!(Ps:  você consegue ser resenha quando quer)''",
+      "''Oi, João.Seja menos chato com os próximos alunos (se for dar aula) e sucesso na sua nova carreira e conquistas. Sei que ser professor não é fácil e mesmo assim você continuou dando aula pra gente, obrigado!''",
     ),
   pessoa20: () =>
     mostarInfos(

@@ -88,7 +88,7 @@ const acoes = {
     mostarInfos("img/kecio.jpg", "Kecio", "''🍎Maracujá Maracujá 🍎''"),
   pessoa13: () =>
     mostarInfos(
-      "img/larisao.jpg",
+      "img/larisão .jpg",
       "Larissão",
       `João, quando você me falou que iria sair, fiquei muito feliz e muito triste ao mesmo tempo.
 
